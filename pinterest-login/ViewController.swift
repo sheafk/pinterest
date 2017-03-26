@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  pinterest-login
 //
-//  Created by Flatiron School on 3/26/17.
+//  Created by Shea Furey-King on 3/26/17.
 //  Copyright © 2017 sfk. All rights reserved.
 //
 

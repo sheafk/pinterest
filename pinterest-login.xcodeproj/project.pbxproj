@@ -14,6 +14,9 @@
 		1BDB5FB41E884AB400A8E155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BDB5FB21E884AB400A8E155 /* LaunchScreen.storyboard */; };
 		1BDB5FBF1E884AB400A8E155 /* pinterest_loginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB5FBE1E884AB400A8E155 /* pinterest_loginTests.swift */; };
 		1BDB5FCA1E884AB400A8E155 /* pinterest_loginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB5FC91E884AB400A8E155 /* pinterest_loginUITests.swift */; };
+		222494702705F17D1CB7C769 /* Pods_pinterest_loginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467074CE76C762A21F20A704 /* Pods_pinterest_loginUITests.framework */; };
+		51D4298F4785E0F794ACA8F1 /* Pods_pinterest_loginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4175EED83801F9A54E9E6B2 /* Pods_pinterest_loginTests.framework */; };
+		CE4C32A78269DD84BF31C1DA /* Pods_pinterest_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D4F0CCCA0031B7B245906A /* Pods_pinterest_login.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,16 @@
 		1BDB5FC51E884AB400A8E155 /* pinterest-loginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pinterest-loginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BDB5FC91E884AB400A8E155 /* pinterest_loginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinterest_loginUITests.swift; sourceTree = "<group>"; };
 		1BDB5FCB1E884AB400A8E155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BDB5FD81E88585000A8E155 /* pinterest-login-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pinterest-login-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		1CA3F19B75A63792DB35FDBA /* Pods-pinterest-loginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterest-loginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pinterest-loginTests/Pods-pinterest-loginTests.release.xcconfig"; sourceTree = "<group>"; };
+		467074CE76C762A21F20A704 /* Pods_pinterest_loginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinterest_loginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC58F9894045B58D4AB708A /* Pods-pinterest-loginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterest-loginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pinterest-loginTests/Pods-pinterest-loginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4175EED83801F9A54E9E6B2 /* Pods_pinterest_loginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinterest_loginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1ED30D5513D226C2AED48AE /* Pods-pinterest-login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterest-login.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pinterest-login/Pods-pinterest-login.debug.xcconfig"; sourceTree = "<group>"; };
+		B5339E30CBB2E73442A4A7EB /* Pods-pinterest-loginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterest-loginUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pinterest-loginUITests/Pods-pinterest-loginUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9D4F0CCCA0031B7B245906A /* Pods_pinterest_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinterest_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3BA33B3A079E9E29A647DD1 /* Pods-pinterest-login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterest-login.release.xcconfig"; path = "Pods/Target Support Files/Pods-pinterest-login/Pods-pinterest-login.release.xcconfig"; sourceTree = "<group>"; };
+		F61C4B1CF0B6B22CC54935A1 /* Pods-pinterest-loginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterest-loginUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pinterest-loginUITests/Pods-pinterest-loginUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4C32A78269DD84BF31C1DA /* Pods_pinterest_login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D4298F4785E0F794ACA8F1 /* Pods_pinterest_loginTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222494702705F17D1CB7C769 /* Pods_pinterest_loginUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,8 @@
 				1BDB5FBD1E884AB400A8E155 /* pinterest-loginTests */,
 				1BDB5FC81E884AB400A8E155 /* pinterest-loginUITests */,
 				1BDB5FA71E884AB300A8E155 /* Products */,
+				C9BCE2C2F188712CBFA9AA09 /* Pods */,
+				BBB1F6B34ADE59EC6E318281 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				1BDB5FA91E884AB300A8E155 /* AppDelegate.swift */,
+				1BDB5FD81E88585000A8E155 /* pinterest-login-Bridging-Header.h */,
 				1BDB5FAB1E884AB300A8E155 /* ViewController.swift */,
 				1BDB5FAD1E884AB300A8E155 /* Main.storyboard */,
 				1BDB5FB01E884AB300A8E155 /* Assets.xcassets */,
@@ -125,6 +144,29 @@
 			path = "pinterest-loginUITests";
 			sourceTree = "<group>";
 		};
+		BBB1F6B34ADE59EC6E318281 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9D4F0CCCA0031B7B245906A /* Pods_pinterest_login.framework */,
+				A4175EED83801F9A54E9E6B2 /* Pods_pinterest_loginTests.framework */,
+				467074CE76C762A21F20A704 /* Pods_pinterest_loginUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9BCE2C2F188712CBFA9AA09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1ED30D5513D226C2AED48AE /* Pods-pinterest-login.debug.xcconfig */,
+				E3BA33B3A079E9E29A647DD1 /* Pods-pinterest-login.release.xcconfig */,
+				6BC58F9894045B58D4AB708A /* Pods-pinterest-loginTests.debug.xcconfig */,
+				1CA3F19B75A63792DB35FDBA /* Pods-pinterest-loginTests.release.xcconfig */,
+				B5339E30CBB2E73442A4A7EB /* Pods-pinterest-loginUITests.debug.xcconfig */,
+				F61C4B1CF0B6B22CC54935A1 /* Pods-pinterest-loginUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BDB5FCE1E884AB400A8E155 /* Build configuration list for PBXNativeTarget "pinterest-login" */;
 			buildPhases = (
+				577A426584DC25E023E4E3BE /* [CP] Check Pods Manifest.lock */,
 				1BDB5FA21E884AB300A8E155 /* Sources */,
 				1BDB5FA31E884AB300A8E155 /* Frameworks */,
 				1BDB5FA41E884AB300A8E155 /* Resources */,
+				8FDD19BDDCBFFE049CBAB184 /* [CP] Embed Pods Frameworks */,
+				1AEE9C829BC575DABB01B611 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BDB5FD11E884AB400A8E155 /* Build configuration list for PBXNativeTarget "pinterest-loginTests" */;
 			buildPhases = (
+				A6B34B0EA7C2ABBD2E6FFC0A /* [CP] Check Pods Manifest.lock */,
 				1BDB5FB61E884AB400A8E155 /* Sources */,
 				1BDB5FB71E884AB400A8E155 /* Frameworks */,
 				1BDB5FB81E884AB400A8E155 /* Resources */,
+				9653F84B7A5C3CA8B663E25D /* [CP] Embed Pods Frameworks */,
+				66D5EA908EADB8156D5E2B86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BDB5FD41E884AB400A8E155 /* Build configuration list for PBXNativeTarget "pinterest-loginUITests" */;
 			buildPhases = (
+				3DC54C7DCCB10D3B7C53718E /* [CP] Check Pods Manifest.lock */,
 				1BDB5FC11E884AB400A8E155 /* Sources */,
 				1BDB5FC21E884AB400A8E155 /* Frameworks */,
 				1BDB5FC31E884AB400A8E155 /* Resources */,
+				DF7905FCB72D0204771BCA87 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +306,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AEE9C829BC575DABB01B611 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pinterest-login/Pods-pinterest-login-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DC54C7DCCB10D3B7C53718E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		577A426584DC25E023E4E3BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		66D5EA908EADB8156D5E2B86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pinterest-loginTests/Pods-pinterest-loginTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FDD19BDDCBFFE049CBAB184 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pinterest-login/Pods-pinterest-login-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9653F84B7A5C3CA8B663E25D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pinterest-loginTests/Pods-pinterest-loginTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B34B0EA7C2ABBD2E6FFC0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7905FCB72D0204771BCA87 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pinterest-loginUITests/Pods-pinterest-loginUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BDB5FA21E884AB300A8E155 /* Sources */ = {
@@ -413,6 +586,7 @@
 		};
 		1BDB5FCF1E884AB400A8E155 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1ED30D5513D226C2AED48AE /* Pods-pinterest-login.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T56TUBW264;
@@ -426,6 +600,7 @@
 		};
 		1BDB5FD01E884AB400A8E155 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BA33B3A079E9E29A647DD1 /* Pods-pinterest-login.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T56TUBW264;
@@ -439,6 +614,7 @@
 		};
 		1BDB5FD21E884AB400A8E155 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC58F9894045B58D4AB708A /* Pods-pinterest-loginTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +630,7 @@
 		};
 		1BDB5FD31E884AB400A8E155 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA3F19B75A63792DB35FDBA /* Pods-pinterest-loginTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +646,7 @@
 		};
 		1BDB5FD51E884AB400A8E155 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5339E30CBB2E73442A4A7EB /* Pods-pinterest-loginUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = T56TUBW264;
@@ -483,6 +661,7 @@
 		};
 		1BDB5FD61E884AB400A8E155 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61C4B1CF0B6B22CC54935A1 /* Pods-pinterest-loginUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = T56TUBW264;
@@ -514,6 +693,7 @@
 				1BDB5FD01E884AB400A8E155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BDB5FD11E884AB400A8E155 /* Build configuration list for PBXNativeTarget "pinterest-loginTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +702,7 @@
 				1BDB5FD31E884AB400A8E155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BDB5FD41E884AB400A8E155 /* Build configuration list for PBXNativeTarget "pinterest-loginUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +711,7 @@
 				1BDB5FD61E884AB400A8E155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

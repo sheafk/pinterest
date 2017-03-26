@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  pinterest-login
 //
-//  Created by Flatiron School on 3/26/17.
+//  Created by Shea Furey-King on 3/26/17.
 //  Copyright © 2017 sfk. All rights reserved.
 //
 
 import UIKit
+import PinterestSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        PDKClient.configureSharedInstance(withAppId: "4891777763100344818")
         return true
     }
 

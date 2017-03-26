@@ -41,5 +41,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string></string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>pdk4891777763100344818</string>
+            </array>
+        </dict>
+    </array>
 </dict>
 </plist>
