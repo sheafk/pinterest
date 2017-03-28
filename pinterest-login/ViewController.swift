@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import PinterestSDK
 
 class ViewController: UIViewController {
+    
+    var pinterestLoginSuccess = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +24,23 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func authenticate(_ sender: AnyObject) {
+        
+        PDKClient.sharedInstance().authenticate(withPermissions:
+            [PDKClientReadPublicPermissions,
+             PDKClientWritePublicPermissions,
+             PDKClientReadRelationshipsPermissions,
+             PDKClientWriteRelationshipsPermissions], from: self,
+                                                      withSuccess: { (response) in
+                                                        self.pinterestLoginSuccess = true;
+                                                        print("User authenticated!)");
+                                                        //TODO: If true, will move user to BoardsViewController
+        }) { (error) in
+            print("Error authenticating \(error).")
+        }
+    }
+    
 }
+
+
 

@@ -14,6 +14,8 @@
 		1BDB5FB41E884AB400A8E155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BDB5FB21E884AB400A8E155 /* LaunchScreen.storyboard */; };
 		1BDB5FBF1E884AB400A8E155 /* pinterest_loginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB5FBE1E884AB400A8E155 /* pinterest_loginTests.swift */; };
 		1BDB5FCA1E884AB400A8E155 /* pinterest_loginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB5FC91E884AB400A8E155 /* pinterest_loginUITests.swift */; };
+		1BDB5FDA1E885F5900A8E155 /* pinterest-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BDB5FD91E885F5900A8E155 /* pinterest-logo.jpg */; };
+		1BDB5FDC1E8862DA00A8E155 /* pinterest-name-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BDB5FDB1E8862DA00A8E155 /* pinterest-name-logo.jpg */; };
 		222494702705F17D1CB7C769 /* Pods_pinterest_loginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467074CE76C762A21F20A704 /* Pods_pinterest_loginUITests.framework */; };
 		51D4298F4785E0F794ACA8F1 /* Pods_pinterest_loginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4175EED83801F9A54E9E6B2 /* Pods_pinterest_loginTests.framework */; };
 		CE4C32A78269DD84BF31C1DA /* Pods_pinterest_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D4F0CCCA0031B7B245906A /* Pods_pinterest_login.framework */; };
@@ -51,6 +53,8 @@
 		1BDB5FC91E884AB400A8E155 /* pinterest_loginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinterest_loginUITests.swift; sourceTree = "<group>"; };
 		1BDB5FCB1E884AB400A8E155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BDB5FD81E88585000A8E155 /* pinterest-login-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pinterest-login-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		1BDB5FD91E885F5900A8E155 /* pinterest-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pinterest-logo.jpg"; sourceTree = "<group>"; };
+		1BDB5FDB1E8862DA00A8E155 /* pinterest-name-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pinterest-name-logo.jpg"; sourceTree = "<group>"; };
 		1CA3F19B75A63792DB35FDBA /* Pods-pinterest-loginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterest-loginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pinterest-loginTests/Pods-pinterest-loginTests.release.xcconfig"; sourceTree = "<group>"; };
 		467074CE76C762A21F20A704 /* Pods_pinterest_loginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinterest_loginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC58F9894045B58D4AB708A /* Pods-pinterest-loginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterest-loginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pinterest-loginTests/Pods-pinterest-loginTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,7 +123,9 @@
 				1BDB5FD81E88585000A8E155 /* pinterest-login-Bridging-Header.h */,
 				1BDB5FAB1E884AB300A8E155 /* ViewController.swift */,
 				1BDB5FAD1E884AB300A8E155 /* Main.storyboard */,
+				1BDB5FD91E885F5900A8E155 /* pinterest-logo.jpg */,
 				1BDB5FB01E884AB300A8E155 /* Assets.xcassets */,
+				1BDB5FDB1E8862DA00A8E155 /* pinterest-name-logo.jpg */,
 				1BDB5FB21E884AB400A8E155 /* LaunchScreen.storyboard */,
 				1BDB5FB51E884AB400A8E155 /* Info.plist */,
 			);
@@ -286,8 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BDB5FB41E884AB400A8E155 /* LaunchScreen.storyboard in Resources */,
+				1BDB5FDA1E885F5900A8E155 /* pinterest-logo.jpg in Resources */,
 				1BDB5FB11E884AB300A8E155 /* Assets.xcassets in Resources */,
 				1BDB5FAF1E884AB300A8E155 /* Main.storyboard in Resources */,
+				1BDB5FDC1E8862DA00A8E155 /* pinterest-name-logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
