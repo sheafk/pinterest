@@ -20,8 +20,6 @@ class BoardsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
-    var index = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -62,7 +60,6 @@ class BoardsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        index = indexPath.row
         self.performSegue(withIdentifier: "pinsSegue", sender: indexPath)
     }
     

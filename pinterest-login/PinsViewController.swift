@@ -73,8 +73,6 @@ class PinsViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
 
         cell.noteLabel.text = pins[indexPath.row].note
-        print("Images?!!\(pins[indexPath.row].image)")
-        
         cell.noteLabel.textColor = UIColor.darkGray
         cell.noteLabel.textAlignment = .center
         cell.selectionStyle = .none
