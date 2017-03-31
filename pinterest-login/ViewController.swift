@@ -13,19 +13,22 @@ class ViewController: UIViewController {
     
     var pinterestLoginSuccess = false
 
+    @IBOutlet weak var authenticateButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        authenticateButton.layer.cornerRadius = 5
+        authenticateButton.backgroundColor = UIColor.lightGray
+        authenticateButton.titleLabel?.textColor = UIColor.darkGray
+        authenticateButton.alpha = 0.8
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-
     @IBAction func authenticate(_ sender: AnyObject) {
-        
         PDKClient.sharedInstance().authenticate(withPermissions:
             [PDKClientReadPublicPermissions,
              PDKClientWritePublicPermissions,
@@ -33,8 +36,11 @@ class ViewController: UIViewController {
              PDKClientWriteRelationshipsPermissions], from: self,
                                                       withSuccess: { (response) in
                                                         self.pinterestLoginSuccess = true;
-                                                        print("User authenticated!)");
-                                                        //TODO: If true, will move user to BoardsViewController
+                                                        
+                                                        print("User authenticated!")
+                                                        
+                                                        self.performSegue(withIdentifier: "boardSegue", sender: sender);
+  
         }) { (error) in
             print("Error authenticating \(error).")
         }

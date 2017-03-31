@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 
 target 'pinterest-login' do
-  Comment this line if you're not using Swift and don't want to use dynamic frameworks
+ # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for pinterest-login
@@ -19,5 +19,6 @@ target 'pinterest-login' do
 
 pod “PinterestSDK”, :git => “git@github.com:pinterest/ios-pdk.git”
 
+pod 'SwiftyJSON'
 
 end

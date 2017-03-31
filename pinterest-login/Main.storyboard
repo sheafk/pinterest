@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pinterest_login" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinterest-name-logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zuI-Lb-2fO">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="9Zh-AY-by7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMs-ob-Spj">
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Authenticate">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="authenticate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zay-KF-K9l"/>
+                                    <segue destination="bay-jH-cOX" kind="show" identifier="boardSegue" id="GX6-ZX-b4O"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save creative ideas for any project or interest" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAp-cV-k0O">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qMs-ob-Spj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="72" id="2Af-5x-KJe"/>
+                            <constraint firstItem="fAp-cV-k0O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="62" id="74D-NV-vYE"/>
+                            <constraint firstItem="zuI-Lb-2fO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="83y-q9-JEf"/>
+                            <constraint firstItem="qMs-ob-Spj" firstAttribute="top" secondItem="fAp-cV-k0O" secondAttribute="bottom" constant="62" id="C74-Wn-Y7c"/>
+                            <constraint firstItem="zuI-Lb-2fO" firstAttribute="centerX" secondItem="fAp-cV-k0O" secondAttribute="centerX" id="Cxk-Xc-s4w"/>
+                            <constraint firstItem="zuI-Lb-2fO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="136" id="mWu-Jg-ffO"/>
+                            <constraint firstItem="zuI-Lb-2fO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="my4-IH-KQb"/>
+                            <constraint firstItem="fAp-cV-k0O" firstAttribute="centerX" secondItem="qMs-ob-Spj" secondAttribute="centerX" id="oRY-VV-aku"/>
+                            <constraint firstItem="fAp-cV-k0O" firstAttribute="top" secondItem="zuI-Lb-2fO" secondAttribute="bottom" constant="26" id="qUb-Q9-667"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qMs-ob-Spj" secondAttribute="bottom" constant="202" id="tfz-dM-BKF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authenticateButton" destination="qMs-ob-Spj" id="QvF-Ut-x0R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="115.59220389805098"/>
+        </scene>
+        <!--Boards-->
+        <scene sceneID="7K2-2d-oEg">
+            <objects>
+                <viewController id="bay-jH-cOX" customClass="BoardsViewController" customModule="pinterest_login" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iLO-Yz-CmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="wWH-SW-Gm8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A7F-rH-2hu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E7R-RU-fYd">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="boardCell" id="RUs-cT-x29">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RUs-cT-x29" id="GSk-41-LxT">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Esk-qV-Jkw" kind="show" identifier="pinsSegue" id="ut1-Dt-d07"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nl-7B-lYQ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Nl-7B-lYQ" firstAttribute="centerX" secondItem="E7R-RU-fYd" secondAttribute="centerX" id="1HB-Zn-C2d"/>
+                            <constraint firstItem="4Nl-7B-lYQ" firstAttribute="top" secondItem="iLO-Yz-CmD" secondAttribute="bottom" constant="46" id="5Wg-GD-w3d"/>
+                            <constraint firstItem="E7R-RU-fYd" firstAttribute="top" secondItem="4Nl-7B-lYQ" secondAttribute="bottom" constant="23" id="75J-8F-ycg"/>
+                            <constraint firstItem="wWH-SW-Gm8" firstAttribute="top" secondItem="E7R-RU-fYd" secondAttribute="bottom" constant="43" id="DJK-9T-SU5"/>
+                            <constraint firstItem="E7R-RU-fYd" firstAttribute="leading" secondItem="A7F-rH-2hu" secondAttribute="leading" id="LOT-N7-Zxg"/>
+                            <constraint firstAttribute="trailing" secondItem="E7R-RU-fYd" secondAttribute="trailing" id="zKA-sN-6Cw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Boards" id="qKX-s6-TEh"/>
+                    <connections>
+                        <outlet property="boardsTableView" destination="E7R-RU-fYd" id="IAC-8q-DqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5N-P3-Nzz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="116"/>
+        </scene>
+        <!--Pins View Controller-->
+        <scene sceneID="MDw-uZ-uVW">
+            <objects>
+                <viewController storyboardIdentifier="pinsViewController" id="Esk-qV-Jkw" customClass="PinsViewController" customModule="pinterest_login" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nod-76-lSL"/>
+                        <viewControllerLayoutGuide type="bottom" id="yqI-4m-Jri"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uSC-xB-AjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hob-CW-V5a">
+                                <frame key="frameInset" minY="112" width="375" height="511"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pinCell" rowHeight="140" id="zAc-up-25g" customClass="PinTableViewCell" customModule="pinterest_login" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zAc-up-25g" id="qn0-gY-fkK">
+                                            <frame key="frameInset" width="375" height="139"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QK6-GP-VgG">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bR-mt-tjb">
+                                                    <frame key="frameInset" minX="8" width="175" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4bR-mt-tjb" firstAttribute="leading" secondItem="qn0-gY-fkK" secondAttribute="leading" id="1Jf-cB-FAI"/>
+                                                <constraint firstItem="4bR-mt-tjb" firstAttribute="width" secondItem="qn0-gY-fkK" secondAttribute="width" multiplier="0.5" id="1lU-Vb-bqn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="QK6-GP-VgG" secondAttribute="bottom" id="C2J-1S-jEG"/>
+                                                <constraint firstItem="QK6-GP-VgG" firstAttribute="top" secondItem="qn0-gY-fkK" secondAttribute="topMargin" id="I32-DW-Uvh"/>
+                                                <constraint firstItem="QK6-GP-VgG" firstAttribute="leading" secondItem="4bR-mt-tjb" secondAttribute="trailing" constant="16" id="LPW-hl-lAS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="QK6-GP-VgG" secondAttribute="trailing" constant="8" id="M2Y-9V-UoY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="noteLabel" destination="QK6-GP-VgG" id="KXU-UN-Odi"/>
+                                            <outlet property="pinImageView" destination="4bR-mt-tjb" id="zLE-tw-2T8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pe-rq-AJq">
+                                <frame key="frameInset" minX="166" minY="67" width="33" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="pinsTableView" destination="hob-CW-V5a" id="PBl-kK-mXH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdK-tE-Omh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1613.5999999999999" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pinterest-name-logo.jpg" width="1200" height="800"/>
+    </resources>
+</document>

@@ -18,9 +18,11 @@ PODS:
     - AFNetworking (~> 3.0)
     - SAMKeychain
   - SAMKeychain (1.5.2)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - PinterestSDK (from `git@github.com:pinterest/ios-pdk.git`)
+  - SwiftyJSON
 
 EXTERNAL SOURCES:
   PinterestSDK:
@@ -35,7 +37,8 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   PinterestSDK: 798aced4e2ce7a9607b3df1ac77abf2c72f57734
   SAMKeychain: 1865333198217411f35327e8da61b43de79b635b
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: ca38a9657dfb2b3aa7cc6258ad22a85cd39fe2b4
+PODFILE CHECKSUM: 9d7ba90fa2b0baf2a129453fd5150bf4a5982332
 
 COCOAPODS: 1.0.1
