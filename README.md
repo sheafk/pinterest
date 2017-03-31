@@ -11,3 +11,4 @@ Simple pinterest iOS app using the Pinterest iOS SDK. This was based on a code c
 ## Coded by
 Shea Furey-King
 
+![pinterest](https://cloud.githubusercontent.com/assets/17285859/24532325/a649b4fc-158d-11e7-87c5-ef629d0e7dde.png)
